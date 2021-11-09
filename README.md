@@ -6,7 +6,21 @@
 
 Template of simple server on nest.
 
-Server have cookie parser, but in template cookies haven't been used. This is just prepare
+Server have cookie parser, but in template cookies haven't been used. This is just prepare.
+
+Server have middleware for open css, js and etc. files without controller. 
+For this you should create a `www` folder in `/`.
+All `*.html` files move in `www/**`.
+All imports in html files should send on `/www/*` path, for example in `www/login/index.html`:
+```html
+<!-- You should use this -->
+<script src="/www/login/js/cool_script.js">
+```
+instead of this
+```html
+<!-- Return 404 -->
+<script src="./js/cool_script.js">
+```
 
 ## Installation
 
