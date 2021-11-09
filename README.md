@@ -6,6 +6,8 @@
 
 Template of simple server on nest.
 
+Server have cookie parser, but in template cookies haven't been used. This is just prepare
+
 ## Installation
 
 ```bash
